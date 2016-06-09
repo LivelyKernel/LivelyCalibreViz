@@ -24,7 +24,7 @@ d3.csv("https://lively4//books/Library/books.csv",(d) => {
 }, (error, rows) => {
   if (error) throw error;
 
-  rows = rows.slice(0,1000) // for dev
+  rows = rows.slice(0,100) // for dev
 
   var node = svg.selectAll(".node")
       .data(bubble.nodes( {children: rows} )
