@@ -1,7 +1,4 @@
 
-System.import("https://d3js.org/d3.v3.js").then( () => {
-
-
 var diameter = 960,
     format = d3.format(",d"),
     color = d3.scale.category20c();
@@ -51,6 +48,5 @@ d3.csv("https://lively4//books/Library/books.csv",(d) => {
 d3.select(self.frameElement).style("height", diameter + "px");
 
 
-})
 
 
